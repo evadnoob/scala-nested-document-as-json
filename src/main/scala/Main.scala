@@ -38,7 +38,7 @@ object Main {
      }""".format(_id.toString)
 
       val user = User.createRecord
-    user.setFieldsFromJValue(parse(json2))
+    user.setFieldsFromJValue(parse(json1))
     user.save
 
     //val o = User.createRecord.email("xyz").visibilit
