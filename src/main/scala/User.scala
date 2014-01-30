@@ -13,7 +13,7 @@ class User extends MongoRecord[User] with ObjectIdKey[User] with IndexedRecord[U
   def meta: MongoMetaRecord[User] = User
   object email extends StringField(this, 255)
   object loginCount extends LongField(this)
-  object visibility extends MongoMapField[User, VisibilityBson](this)
+  object visibility extends BsonRecordMapField[User, VisibilityBson](this, VisibilityBson)
 
   // override def toString: String = {
   //   this.asJSON.toString

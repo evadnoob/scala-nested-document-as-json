@@ -29,7 +29,8 @@ libraryDependencies ++= Seq(
   "org.slf4j" % "slf4j-api" % "1.7.5",
   "org.apache.logging.log4j" % "log4j-slf4j-impl" % "2.0-beta9",
   "org.apache.logging.log4j" % "log4j-api" % "2.0-beta9",
-  "org.apache.logging.log4j" % "log4j-core" % "2.0-beta9"
+  "org.apache.logging.log4j" % "log4j-core" % "2.0-beta9",
+  "com.sksamuel.elastic4s" %% "elastic4s" % "0.90.10.0"
 )
 
 

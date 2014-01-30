@@ -15,6 +15,7 @@ object Main {
 
   RogueMongo.connectToMongo
 
+    //client.execute { create index "persons" }
 
     implicit val formats = DefaultFormats
 
@@ -40,6 +41,8 @@ object Main {
       val user = User.createRecord
     user.setFieldsFromJValue(parse(json1))
     user.save
+
+    println(user.asJSON.toString)
 
     //val o = User.createRecord.email("xyz").visibilit
     //o.save
